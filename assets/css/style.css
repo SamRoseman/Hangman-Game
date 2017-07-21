@@ -1,13 +1,29 @@
 body {
 	background-color: pink;
 	color: white;
+}
 
+.container {
+	margin-top: 45px;
+	
+}
+#frameLG {
+	
+	border: 40px ridge white;
+	box-shadow: 10px 10px 10px #888888;
+}
+
+#frameSM {
+	height: 350px;
+	width: 100%;
+	border: 40px ridge white;
+	box-shadow: 10px 10px 10px #888888;
 }
 
 h1 {
 	text-align: center;
 	font-size: 75px;
-	font-family: 'Cinzel', serif;
+	font-family: 'Parisienne', cursive;
 
 }
 

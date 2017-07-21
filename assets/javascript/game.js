@@ -4,7 +4,7 @@
 		var wins = 0;
 		var losses = 0;
 		var guessesLeft = 10;
-		var words = ["cats","claw","meow","paws"];
+		var words = ["cats","claw","meow","paws","soft","yarn","play","milk"];
 		var compAnswer = document.getElementById("comp-text");
 		var userA = document.getElementById("user-a");
 		var userB = document.getElementById("user-b");
@@ -34,6 +34,14 @@
 			userB.textContent = " _ "	
 			userC.textContent = " _ "	
 			userD.textContent = " _ "			
+		}
+
+		function waitWin(){
+			alert("Winner!");
+		}
+
+		function waitLose(){
+			alert("You Lost :(");
 		}
 
 		// call the start function
@@ -87,9 +95,9 @@
 				}
 				
 				if (userA.textContent !== " _ " && userB.textContent !== " _ " && userC.textContent !== " _ " && userD.textContent !== " _ "){
-					wins++;
-					alert("winner");
-					start();
+					setTimeout(waitWin, 250);
+					setTimeout (wins++, 500);
+					setTimeout(start(), 500);
 				}
 
 
